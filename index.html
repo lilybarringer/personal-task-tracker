@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Personal Task Tracker</h1>
+        <p>Organize your day, one task at a time.</p>
+    </header>
+
+    <main>
+        <section class="task-container">
+            <h2>My Tasks</h2>
+
+            <form id="task-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="Enter a new task..."
+                    required
+                >
+                <button type="submit">Add Task</button>
+            </form>
+
+            <p id="task-count">0 tasks remaining</p>
+
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Personal Task Tracker | Created for my Git assignment</p>
+    </footer>
+</body>
+</html>
