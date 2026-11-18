@@ -13,7 +13,27 @@ taskForm.addEventListener("submit", function(event) {
     }
 
     const task = document.createElement("li");
-    task.textContent = taskText;
+
+    const taskName = document.createElement("span");
+    taskName.textContent = taskText;
+
+    const completeButton = document.createElement("button");
+    completeButton.textContent = "Complete";
+
+    completeButton.addEventListener("click", function() {
+        taskName.classList.toggle("completed");
+    });
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+
+    deleteButton.addEventListener("click", function() {
+        task.remove();
+    });
+
+    task.appendChild(taskName);
+    task.appendChild(completeButton);
+    task.appendChild(deleteButton);
 
     taskList.appendChild(task);
 
