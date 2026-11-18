@@ -69,3 +69,11 @@ footer {
     color: #777;
     padding: 20px;
 }
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li button {
+    margin-left: 8px;
+}
